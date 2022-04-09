@@ -25,7 +25,6 @@ const myModule = (() => {
 //Exposicion de variables locales
 return exported
 
-
-
 })()
+
 console.log(myModule)
