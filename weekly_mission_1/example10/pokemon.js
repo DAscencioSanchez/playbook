@@ -1,4 +1,4 @@
-class Pokemon {
+export default class Pokemon {
     constructor (name) {
         this.name = name
     }
@@ -9,5 +9,3 @@ class Pokemon {
         console.log(`[Mi pokemon ${this.name}] dice ${message}`)
     }
 }
-
-module.exports = Pokemon
