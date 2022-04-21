@@ -66,65 +66,65 @@ console.log(myPR1.getInfo())
 const myPR2 = new PullRequest("LaunchX", "Mi segundo PR", 99)
 console.log(myPR2.getInfo())
 
-// // Ejemplo 6: Getters para acceder a los atributos del objeto
+// Ejemplo 6: Getters para acceder a los atributos del objeto
 
-// class Ajolonauta {
-//     constructor(name, age, stack){
-//     this.name = name
-//     this.age = age
-//     this.stack = stack
-//     this.exercises_completed = 0
-//     this.exercises_todo = 99
-//     }
+class Ajolonauta {
+    constructor(name, age, stack){
+    this.name = name
+    this.age = age
+    this.stack = stack
+    this.exercises_completed = 0
+    this.exercises_todo = 99
+    }
 
-//   // Podemos acceder a los atributos de esta clase
-//     get getExercisesCompleted() {
-// 		return this.exercises_completed
-//     }
-// }
+  // Podemos acceder a los atributos de esta clase
+    get getExercisesCompleted() {
+		return this.exercises_completed
+    }
+}
 
-// console.log("Ejemplo 6: Getters para acceder a los atributos del objeto")
-// const woopa = new Ajolonauta("Woopa", 1, [])
-// console.log(woopa.getExercisesCompleted)
+console.log("Ejemplo 6: Getters para acceder a los atributos del objeto")
+const woopa = new Ajolonauta("Woopa", 1, [])
+console.log(woopa.getExercisesCompleted)
 
-// // Ejemplo 7: Setters para modificar los atributos del objeto
-// class MissionCommander {
-//     constructor(name, mission){
-//         this.name = name
-//         this.mission = mission
-//         this.students = 0
-//         this.lives = 0
-//     }
+// Ejemplo 7: Setters para modificar los atributos del objeto
+class MissionCommander {
+    constructor(name, mission){
+        this.name = name
+        this.mission = mission
+        this.students = 0
+        this.lives = 0
+    }
 
-// get getStudents(){
-//     return this.students
-// }
+get getStudents(){
+    return this.students
+}
 
-// get getLives(){
-//     return this.lives
-// }
+get getLives(){
+    return this.lives
+}
 
-// set setStudents(students){
-//     this.students = students
-// }
+set setStudents(students){
+    this.students = students
+}
 
-// set setLives(lives){
-//         this.lives = lives
-//     }
-// }
+set setLives(lives){
+        this.lives = lives
+    }
+}
 
-// console.log("Ejemplo 7: Setters para modificar los atributos del objeto")
-// const missionCommanderNode = new MissionCommander("Carlo", "NodeJS")
+console.log("Ejemplo 7: Setters para modificar los atributos del objeto")
+const missionCommanderNode = new MissionCommander("Carlo", "NodeJS")
 
-// console.log(missionCommanderNode.getStudents) // 0 por default
-// console.log(missionCommanderNode.getLives)// 0 por default
+console.log(missionCommanderNode.getStudents) // 0 por default
+console.log(missionCommanderNode.getLives)// 0 por default
 
-// // actualizamos los atributos por medio de los setters
-// missionCommanderNode.setStudents = 100
-// missionCommanderNode.setLives = 3
+// actualizamos los atributos por medio de los setters
+missionCommanderNode.setStudents = 100
+missionCommanderNode.setLives = 3
 
-// console.log(missionCommanderNode.getStudents) // 0 por default
-// console.log(missionCommanderNode.getLives)// 0 por default
+console.log(missionCommanderNode.getStudents) // 0 por default
+console.log(missionCommanderNode.getLives)// 0 por default
 
 // // Ejemplo 8: Métodos static nos ayudan a escribir métodos en una clase que podemos usar sin necesidad de instanciar algún objeto
 // class Toolbox {
