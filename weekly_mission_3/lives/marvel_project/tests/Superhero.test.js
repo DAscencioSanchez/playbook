@@ -1,6 +1,11 @@
-describe("Test Suite Dummy Description", () => {
-    test('Case 1 Dummy',  () => {
-        const resultOfSomething = 1 + 2
-        expect(resultOfSomething).toBe(18)
+const SuperHero = require("../app/Superhero")
+
+describe("Test Suite for superhero", () => {
+    test('Case 1: get a superhero',  () => {
+        const ironman = new SuperHero("Iron Man", "Tony Stark","Robert Downey Jr.")
+        expect(ironman.name).toBe("Tony Stark")
+        expect(ironman.heroName).toBe("Iron Man")
+        expect(ironman.actor).toBe("Robert Downey Jr.")
+        
     });
 })
